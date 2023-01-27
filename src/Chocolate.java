@@ -11,6 +11,9 @@ public class Chocolate {
     public static void main(String[] args){
         int bag = 9;
         int chocolatePerBag = 2;
+        int maxCapacity = 3;
+        int bagsNeeded = bag * chocolatePerBag / maxCapacity;
+        System.out.println("The chocolates need " + bagsNeeded + " bags.");
 
     }
 }
