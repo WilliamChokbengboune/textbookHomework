@@ -7,12 +7,16 @@
  * The course is meant to calculate the perimeter and area of a circle.
  */
 
+import java.util.Scanner;
+
 public class Circle {
     public static void main(String[] args){
-        double radius = 9.5;
-        double area = radius * radius * Math.PI; // this line calculates the area of the code
-        double perimeter = 2 * radius * Math.PI; // This line calculates the perimeter
-        System.out.println("The area is " + area);
-        System.out.println("The perimeter is " + perimeter);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the radius: "); //this line prompts the user to enter the radius
+        double radius = input.nextDouble();
+        double area = radius * radius * Math.PI; // this line calculates the area of a circle
+        System.out.printf("The area is %.2f.", area);
+        double perimeter = 2 * radius * Math.PI; // This line calculates the perimeter of a circle
+        System.out.printf("The perimeter is %.2f.", perimeter);
     }
 }

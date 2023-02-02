@@ -16,7 +16,7 @@ public class SpeedLight {
         System.out.println("Enter distance: ");
         int time = input.nextInt(); //amount of time between lightning heard and seen
         int distance = speed * time;
-        System.out.println(distance);
+        System.out.println("Speed of light has traveled " + distance + " meters.");
 
     }
 }
